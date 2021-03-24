@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+body {
+  line-height: 1;
+  font-family: "Sen", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+input,
+button,
+textarea {
+  font-family: "Sen", sans-serif;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+.main-block__item:hover,
+.main-block__item:active,
+.footer__block-item:hover,
+.footer__block-item:active {
+  background-color: #2a1270;
+}
+.main-block__item:hover a {
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer__block-item:hover a {
+  font-size: 22px;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+.title {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 66px;
+  color: #fff;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8491a0;
+  text-transform: uppercase;
+}
+.text {
+  line-height: 27px;
+  color: #8491a0;
+}
+.btn {
+  line-height: 24px;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #189ff9;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 100%;
+  box-shadow: 0px 0px 29px 3px rgba(19, 137, 229, 0.58) inset;
+  transition: all, 0.3s;
+  background-color: transparent;
+  &:hover {
+    box-shadow: 0px 0px 29px 3px rgba(82, 33, 230, 0.58) inset;
+    color: #5221e6;
+  }
+}
+
+@keyframes company {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
