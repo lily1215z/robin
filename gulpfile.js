@@ -1,26 +1,23 @@
 let gulp = require("gulp"),
-  sass = require("gulp-sass"),
-  browserSync = require("browser-sync"),
-  uglify = require("gulp-uglify"),
-  concat = require("gulp-concat"),
-  rename = require("gulp-rename"),
-  del = require("del"),
-  autoprefixer = require("gulp-autoprefixer");
+    sass = require("gulp-sass"),
+    browserSync = require("browser-sync"),
+    uglify = require("gulp-uglify"),
+    concat = require("gulp-concat"),
+    rename = require("gulp-rename"),
+    del = require("del"),
+    autoprefixer = require("gulp-autoprefixer");
+    // imagemin = require('gulp-imagemin');
+
 
 gulp.task("clean", async function () {
   del.sync("dist");
 });
 
-// gulp.task('scss', function(){
-//   return gulp.src('app/scss/**/*.scss')
-//     .pipe(sass({outputStyle: 'compressed'}))
-//     .pipe(autoprefixer({
-//       browsers: ['last 8 versions']
-//     }))
-//     .pipe(rename({suffix: '.min'}))
-//     .pipe(gulp.dest('app/css'))
-//     .pipe(browserSync.reload({stream: true}))
-// });
+// exports.default = () => (
+//   gulp.src('app/images/*')
+//       .pipe(imagemin())
+//       .pipe(gulp.dest('dist/images'))
+// );
 
 gulp.task("scss", function () {
   return gulp
@@ -29,9 +26,11 @@ gulp.task("scss", function () {
     .pipe(
       autoprefixer({
         //добавляем вендорные префиксы
-        overrideBrowserslist: ["last 8 versions"], //последние 8 версий, но можно донастроить на большее или меньшее значение
+        overrideBrowserslist: ["last 8 versions"], //последние 8 версий, но можно донастроить
+        // на большее или меньшее значение
         browsers: [
-          //список поддерживаемых браузеров и их версия - ВНИМАНИЕ! данная опция влияет только на расстановку префиксов и не гарантирут 100% работы сайта в этих браузерах.
+          //список поддерживаемых браузеров и их версия - ВНИМАНИЕ! данная опция влияет только 
+          //на расстановку префиксов и не гарантирут 100% работы сайта в этих браузерах.
           "Android >= 4",
           "Chrome >= 20",
           "Firefox >= 24",
@@ -92,7 +91,7 @@ gulp.task("export", function () {
 
   let BuildFonts = gulp.src("app/fonts/**/*.*").pipe(gulp.dest("dist/fonts"));
 
-  let BuildImg = gulp.src("app/img/**/*.*").pipe(gulp.dest("dist/img"));
+  let BuildImg = gulp.src("app/images/**/*.*").pipe(gulp.dest("dist/images"));
 });
 
 gulp.task("watch", function () {

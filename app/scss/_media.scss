@@ -1,0 +1,554 @@
+@media(max-width: 1600px) {
+    .work__img--size {
+        left: 32px;
+    }
+
+    .robin__info {
+        margin-left: 40px;
+        max-width: 803px;
+    }
+
+    .robin__title--name:hover {
+        font-size: 78px;
+    }
+}
+
+@media(max-width: 1450px) {
+
+    .robin__title,
+    .robin__title--name:hover {
+        font-size: 48px;
+        line-height: 69px;
+    }
+
+    .robin__info {
+        max-width: 680px;
+    }
+
+    .company__block {
+        column-gap: 20px;
+    }
+
+    .value__inner {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .value__text {
+        padding: 0 5px 0;
+        margin-bottom: 100px;
+    }
+
+    .skillset__inner {
+        flex-direction: column;
+    }
+
+    .skillset__more {
+        max-width: 100%;
+        flex-wrap: nowrap;
+        margin-top: 25px;
+    }
+
+    .skillset__more-item {
+        max-width: 250px;
+    }
+
+}
+
+@media(max-width: 1300px) {
+    .aboutme__box {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 1200px) {
+
+    .robin__title,
+    .robin__title--name:hover {
+        font-size: 34px;
+        line-height: 52px;
+    }
+
+    .robin__title--name:hover {
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .robin__text {
+        padding-right: 7px;
+        line-height: 32px;
+    }
+
+    .header__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__nav {
+        margin-top: 15px;
+    }
+
+    .robin__info {
+        margin-left: 0;
+        max-width: 550px;
+        top: 47vh;
+    }
+
+    .company {
+        padding: 120px 10px;
+    }
+
+    .value,
+    .value-instagram {
+        padding-left: 0px;
+        padding-right: 0;
+    }
+
+    .work__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work__img--size {
+        left: 100px;
+    }
+
+}
+
+@media(max-width: 1000px) {
+    .robin__info {
+        top: 57vh;
+        left: 50px;
+        max-width: 700px;
+    }
+
+    .skillset__more {
+        flex-wrap: wrap;
+    }
+
+    .work__title {
+        max-width: 100%;
+    }
+
+    .aboutme__inner {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .aboutme__box {
+        margin-bottom: 30px;
+        margin-right: auto;
+    }
+
+    .container.tabs {
+        padding: 0;
+    }
+
+    .photo__box,
+    .photo__tabs {
+        padding: 0 15px;
+    }
+
+    .form__inner {
+        flex-wrap: wrap;
+    }
+
+    .form__registration {
+        margin-left: auto;
+    }
+
+    .form__box {
+        margin-bottom: 30px;
+    }
+
+    .form::after {
+        top: 135px;
+    }
+
+    .tab-item {
+        flex-wrap: wrap;
+        max-width: 612px;
+        margin: 0 auto;
+    }
+
+    .company {
+        padding-top: 135px;
+    }
+
+    .work {
+        padding-top: 140px;
+    }
+
+    .photo,
+    .form {
+        padding-top: 130px;
+    }
+}
+
+@media(max-width: 800px) {
+    .company__block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .robin__info {
+        left: 15px;
+        max-width: 561px;
+    }
+
+    .robin__title,
+    .robin__title--name:hover {
+        font-size: 32px;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .value__title {
+        font-size: 48px;
+    }
+
+    .tab__box {
+        width: 50%;
+        max-width: 306px;
+    }
+
+    .tab+.tab {
+        margin-left: 10px;
+    }
+
+    .tab {
+        padding: 10px 15px;
+    }
+
+    .form {
+        padding-top: 60px;
+    }
+
+    .work__img {
+        left: 47px;
+    }
+
+    .form::after {
+        content: none;
+    }
+
+    .aboutme {
+        padding-bottom: 0;
+    }
+
+    .photo {
+        padding-top: 40px;
+    }
+
+    /* burger, рисуем палочки */
+    .header__icon {
+        z-index: 13;
+        display: block;
+        width: 40px;
+        height: 22px;
+        cursor: pointer;
+        position: absolute;
+        right: 35px;
+        top: 41%;
+    }
+
+    .header__icon span,
+    .header__icon::before,
+    .header__icon::after {
+        left: 0;
+        position: absolute;
+        width: 100%;
+        // height: 10%;
+        height: 3px;
+        transition: all 0.3s ease 0s;
+        background-color: #fff;
+    }
+
+    .header__icon span {
+        width: 70%;
+    }
+
+    .header__icon::before,
+    .header__icon::after {
+        content: '';
+    }
+
+    .header__icon::before {
+        top: 0;
+    }
+
+    .header__icon::after {
+        bottom: 0;
+    }
+
+    .header__icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .header__icon._active span {
+        /* убираем среднюю полоску в бургере при эктиве */
+        transform: scale(0) translate(0px, -50%);
+    }
+
+    /* //поворачиваем палочки чтоб получился крестик */
+    .header__icon._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+
+    .header__icon._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+    }
+
+    /* //формируем тело меню */
+    .header__body {
+        position: fixed;
+        /* position: absolute; прокручивается вместе с сайтом а при fixed всегда в одном месте */
+        top: 0;
+        transform: translate(-100%, 0);
+        left: 0;
+        /* место вокруг меню */
+        padding: 70px 10px 30px;
+        background-color: #181823;
+        transition: left 0.8s ease 0s;
+        z-index: 12;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
+    .header__body._active {
+        transform: translate(0, 0);
+    }
+
+    .header__nav {
+        flex-direction: column;
+    }
+
+    .header__logo {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .robin {
+        background-size: 120%;
+        background-position: left top 50px;
+    }
+
+    .robin__title,
+    .robin__title--name:hover {
+        font-size: 28px;
+    }
+
+    .robin__text {
+        font-size: 16px;
+    }
+
+    .robin__info {
+        max-width: 460px;
+        top: 47vh;
+    }
+
+    .header__logo {
+        margin-left: 0;
+        padding-right: 0;
+        z-index: 13;
+    }
+
+    .epiq__items {
+        flex-wrap: wrap;
+    }
+
+    .epiq__item {
+        width: 50%;
+    }
+
+    .work__img {
+        left: 0;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .robin__title,
+    .robin__title--name:hover {
+        font-size: 24px;
+        line-height: 46px;
+    }
+
+    .robin__info {
+        max-width: 308px;
+        top: 37vh;
+    }
+
+    .value__title {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .value,
+    .value-instagram {
+        padding-top: 70px;
+        padding-bottom: 0px;
+    }
+
+    .skillset {
+        padding: 70px 10px;
+    }
+
+    .skillset__more-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .work__box {
+        padding: 0;
+    }
+
+    .work__box-text {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .dribbble-slider .slick-dots li {
+        width: 10px;
+    }
+
+    .aboutme__test-text {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .aboutme__test-box {
+        padding: 64px 15px;
+    }
+
+    .tab+.tab {
+        margin-left: 8px;
+    }
+
+    .tab {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+    .footer__copyright {
+        font-size: 12px;
+    }
+
+    .footer__box-social {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .footer__item {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .robin__title,
+    .robin__title--name:hover {
+        font-size: 22px;
+        line-height: 46px;
+    }
+
+    .robin__info {
+        max-width: 300px;
+        top: 34vh;
+    }
+
+
+    //родитель бургера-полосок
+    .main-block__icon {
+        right: 15px;
+    }
+
+    .header__logo {
+        padding-left: 0;
+    }
+
+    .value__title {
+        font-size: 38px;
+    }
+
+    .title {
+        font-size: 37px;
+        line-height: 55px;
+    }
+
+    .work__img,
+    .work__img-next {
+        min-height: 450px;
+    }
+
+    .work__img-next {
+        left: 0;
+    }
+
+    .work__box-text {
+        font-size: 16px;
+    }
+
+    .aboutme__test-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .aboutme__test-box {
+        padding: 64px 5px;
+    }
+
+    .tab {
+        padding: 8px 15px;
+    }
+
+    .tab-item {
+        flex-direction: column;
+    }
+
+    .tab__img {
+        max-width: 400px;
+    }
+
+    .tab__box {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .tab+.tab {
+        margin-left: 0;
+    }
+
+    .footer__box-social {
+        margin: 40px 0 5px;
+    }
+
+    .work__btn:hover {
+        transform: scale(1);
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .photo__box {
+        padding: 0 10px;
+    }
+
+    .photo__tabs {
+        flex-direction: column;
+    }
+
+    .footer__scroll::after {
+        left: 70%;
+    }
+}
